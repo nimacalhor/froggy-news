@@ -12,11 +12,11 @@ const UserCard = ({ image }: { image: GalleryItem }) => {
     user: { first_name, last_name, profile_image, username },
   } = image;
   const avatarSize = "min(100px, 80vw)";
-  useEffect(() => {
-    axios
-      .get<any>(profile_image.medium)
-      .then(({ data }) => log("image data ", data));
-  }, [profile_image.medium]);
+  // useEffect(() => {
+  //   axios
+  //     .get<any>(profile_image.medium)
+  //     .then(({ data }) => log("image data ", data));
+  // }, [profile_image.medium]);
 
   return (
     <Box

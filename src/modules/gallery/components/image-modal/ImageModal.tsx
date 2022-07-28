@@ -37,7 +37,8 @@ const ImageModal = ({
       >
         <Grid container spacing={2}>
           <Grid item md={7} lg={8}>
-            <Box sx={{ width: "100%" }}>
+            <Box
+            sx={{ width: "100%" }}>
               <Image
                 alt={alt_description}
                 src={regular}

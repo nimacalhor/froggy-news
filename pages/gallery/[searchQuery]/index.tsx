@@ -22,7 +22,7 @@ const CustomGalleryPage = ({
   color: string;
   list: GalleryItem[];
 }) => {
-  const style = { display: "flex", alignItems: "center", mx:2, gap:1 };
+  const style = { display: "flex", alignItems: "center", mx: 2, gap: 1 };
   return (
     <div className="page">
       <Box sx={{ mb: 4, display: "flex" }}>
@@ -76,6 +76,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       color,
       list,
     },
+    notFound: true,
   };
 };
 

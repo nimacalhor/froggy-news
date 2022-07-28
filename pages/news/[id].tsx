@@ -22,7 +22,6 @@ const Article = dynamic(() => import("@modules/sections/article"));
 
 const ArticlePage = ({ news }: { news: News }) => {
   const router = useRouter();
-  console.log(news);
   useEffect(() => {
     if (!news) router.push("/404");
   });
